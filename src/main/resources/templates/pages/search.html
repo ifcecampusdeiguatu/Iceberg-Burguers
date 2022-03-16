@@ -21,18 +21,24 @@
     </section>
     <main>
         <div class="box-container">
-            <img src="" alt="">
-            <div>
-                <h2>Hamburguer triplo</h2>
-                <p>Mauris vel lectus convallis, pulvinar augue pharetra, facilisis tellus</p>
-                <div class="selectAmount">
-                    <input type="number" min=0>
-                </div>
-                <div>
-                    <span>R$ 15,00</span>
-                    <button>Quero pra já</button>
-                </div>
-            </div>
+            <form th:action="@{/cart}" th:object="${products}" method="post">
+            	<img src="" alt="">
+            	<div>
+	                <h2>Hamburguer triplo</h2>
+	                <p>Mauris vel lectus convallis, pulvinar augue pharetra, facilisis tellus</p>
+	                <div class="selectAmount">
+	                    <input type="number" th:field="*{amount}" min=0>
+	                </div>
+	                <div>
+	                    <span>R$ 15,00</span>
+	                    <input type="hidden" th:field="*{value}" id="value" value="15.0">
+	                    <button>Quero pra já</button>
+	                </div>
+	                
+	                <input type="hidden" th:field="*{title}" value="Hamburguer triplo"/>
+	            </div>
+	            <button type="submit">Quero pra já</button>
+            </form>
         </div>
     </main>
 </body>
