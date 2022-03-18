@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,17 +20,18 @@
                         <th>Preço</th>
                     </tr>
                </thead>
-               <thead>
+               <table>
+               <thead:block th:each="product : ${products}">
                     <tr>
-                        <td>Hamburguê triplo</td>
-                        <td>
-                            <div class="selectAmount">
-                                <input type="number" min=0>
-                            </div>
-                        </td>
-                        <td>R$ 30,00</td>
+                        <td th:text="${product.title}"></td>
+                        <td th:text="${product.amount}"></td>
+                        <td th:text="${product.price * product.amount}"></td>
                     </tr>
-                </thead>
+                </thead:block>
+                   <tr>
+                       <th>Total</th>
+                       <td th:text="${cart.total}"></td>
+                   </tr>
            </table>
         </div>
     </main>

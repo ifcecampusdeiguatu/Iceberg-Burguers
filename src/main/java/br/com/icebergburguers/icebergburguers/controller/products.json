@@ -1,0 +1,56 @@
+{
+    "listProducts": [
+        { 
+            "title": "Hamburguers",
+            "listData": [
+                {
+                    "title": "Hamburguer 01",
+                    "price": 10.0
+                },
+                {
+                    "title": "Hamburguer 02",
+                    "price": 15.0
+                },
+                {
+                    "title": "Hamburguer 03",
+                    "price": 12.50
+                }
+            ]
+        },
+        {
+            "title": "Pasteis",
+            "listData": [
+                {
+                   "title": "Pastel 01",
+                   "price": 8.0
+                },
+                {
+                   "title": "Pastel 02",
+                   "price": 9.50
+                }
+            ]
+        },
+        {
+            "title": "Sucos",
+            "listData": [
+                {
+                   "title": "Acerolo",
+                   "price": 5.0
+                },
+                {
+                   "title": "Marcujá",
+                   "price": 5.50
+                },
+                {
+                   "title": "Manga",
+                   "price": 5.50
+                },
+                {
+                   "title": "Cajá",
+                   "price": 5.50
+                }
+            ]
+        }
+    ]
+    
+}
