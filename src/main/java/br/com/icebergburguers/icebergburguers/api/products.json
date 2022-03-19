@@ -1,8 +1,8 @@
 {
-    "listProducts": [
+    "listCategories": [
         { 
             "title": "Hamburguers",
-            "listData": [
+            "listProducts": [
                 {
                     "title": "Hamburguer 01",
                     "price": 10.0
@@ -19,7 +19,7 @@
         },
         {
             "title": "Pasteis",
-            "listData": [
+            "listProducts": [
                 {
                    "title": "Pastel 01",
                    "price": 8.0
@@ -32,7 +32,7 @@
         },
         {
             "title": "Sucos",
-            "listData": [
+            "listProducts": [
                 {
                    "title": "Acerolo",
                    "price": 5.0

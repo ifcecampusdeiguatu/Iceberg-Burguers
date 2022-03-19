@@ -4,13 +4,16 @@
  */
 package br.com.icebergburguers.icebergburguers.api;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author naiandra
  */
-public class Data {
+public class Categories {
     private String title;
-    private double price;
+    private List<Product> listProducts = new ArrayList<>();
 
     /**
      * @return the title
@@ -27,16 +30,18 @@ public class Data {
     }
 
     /**
-     * @return the price
+     * @return the listProducts
      */
-    public double getPrice() {
-        return price;
+    public List<Product> getListProducts() {
+        return listProducts;
     }
 
     /**
-     * @param price the price to set
+     * @param listProducts the listProducts to set
      */
-    public void setPrice(double price) {
-        this.price = price;
+    public void setListProducts(List<Product> listProducts) {
+        this.listProducts = listProducts;
     }
+
+   
 }

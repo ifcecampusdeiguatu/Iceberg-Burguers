@@ -11,20 +11,22 @@ import java.util.List;
  *
  * @author naiandra
  */
-public class ApiModel {
-    private List<Products> listProducts = new ArrayList<>();
+public class Api {
+    private List<Categories> listCategories = new ArrayList<>();
 
     /**
-     * @return the listProducts
+     * @return the listCategories
      */
-    public List<Products> getListProducts() {
-        return listProducts;
+    public List<Categories> getListCategories() {
+        return listCategories;
     }
 
     /**
-     * @param listProducts the listProducts to set
+     * @param listCategories the listCategories to set
      */
-    public void setListProducts(List<Products> listProducts) {
-        this.listProducts = listProducts;
+    public void setListCategories(List<Categories> listCategories) {
+        this.listCategories = listCategories;
     }
+
+    
 }
